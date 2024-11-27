@@ -35,7 +35,11 @@
 
     <script>
         document.getElementById('clickNow').addEventListener('click', function() {
-            document.getElementById('adContainer').innerHTML = "<script src='//niphaumeenses.net/vignette.min.js' data-zone='8571603' data-sdk='show_8571603'></script>";
+            var script = document.createElement('script');
+            script.src = '//niphaumeenses.net/vignette.min.js';
+            script.setAttribute('data-zone', '8571603');
+            script.setAttribute('data-sdk', 'show_8571603');
+            document.getElementById('adContainer').appendChild(script);
         });
     </script>
 </body>
