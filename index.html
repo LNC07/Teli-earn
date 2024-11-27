@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram WebApp</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #adContainer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="clickNow">Click Now</button>
+        <div id="adContainer"></div>
+    </div>
+
+    <script>
+        document.getElementById('clickNow').addEventListener('click', function() {
+            document.getElementById('adContainer').innerHTML = "<script src='//niphaumeenses.net/vignette.min.js' data-zone='8571603' data-sdk='show_8571603'></script>";
+        });
+    </script>
+</body>
+</html>
